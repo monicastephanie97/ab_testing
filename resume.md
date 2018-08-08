@@ -1,0 +1,4 @@
+# A/B Testing
+## _So, what is A/B Testing?_
+
+Sesuai namanya, A/B Testing adalah metode untuk menguji mana yang lebih baik (_A or B?_). Karena hurufnya berbeda, tentunya A dan B ini adalah dua hal yang berbeda pula, namun tetap pada 'spesies' yang sama. Contohnya ketika kita membandingkan Indomie goreng dengan Indomie goreng telor, keduanya sama-sama Indomie goreng. Menentukan mana yang lebih baik  tentunya relatif, tergantung dari tujuan masing-masing orang saat membuat perbedaan tersebut. Seperti misalnya Abang Ade ingin menambahkan telor ke Indomie gorengnya dengan tujuan bisa menambah keuntungan. Karena tujuan dari Abang Ade adalah menambah keuntungan, maka keuntungan merupakan ukuran seberapa baik perubahan yang telah kita buat. 
