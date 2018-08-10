@@ -123,7 +123,8 @@ Saat ada perubahan, awalnya users mungkin tidak terbiasa dengan perubahan terseb
 
 Langkah-langkah:
 1. _Sanity Check_ \
-Periksa apakah metric memiliki perubahan. Jika tidak ada perubahan, periksa kenapa tidak ada perubahan. Bisa dengan _reprospective analysis_ atau lihat apakah ada _learning effect_.
+
+Periksa jumlah sampel pada variabel kontrol dan eksperimen. Lalu, periksa juga metric yang seharusnya tidak berubah, apakah metric tersebut benar-benar tidak berubah saat eksperimen?
 
 2. Analisa hasil 
     * Jika metric hanya satu dan tidak signifikan, perlu dilakukan langkah-langkah berikut ini:
@@ -131,13 +132,14 @@ Periksa apakah metric memiliki perubahan. Jika tidak ada perubahan, periksa kena
         *  _Cross-check_ dengan metode yang berbeda
     * Jika mengamati banyak metric dalam waktu yang bersamaan
         * Masalah yang mungkin terjadi yaitu terlihat perbedaan tapi penyebabnya tidak sesuai. Ada beberapa cara untuk menanggulangi ini:
-            1. Lakukan bootstrap dan jalankan eksperimen selama beberapa kali. Metric yang signifikan akan hilang apabila memang perbedaan itu hanya kebetulan
+            1. Lakukan bootstrap dan jalankan eksperimen selama beberapa kali. Metric yang signifikan akan hilang apabila memang perbedaan itu hanya kebetulan. \
+            *Pengertian tentang bootstrap dapat dipelajari di [sini](https://www.thoughtco.com/what-is-bootstrapping-in-statistics-3126172).
 
             2. _Bonferroni correction_ \
             Bagi $\alpha$ dengan 20.
 
             3. Mengontrol _Family Wise Error Rate_ (FWER)\
-             peluang suatu metric menghasilkan hasil yang signifikan tapi sebenarnya tidak demikian (_false positives_)
+             Peluang suatu metric menghasilkan hasil yang signifikan tapi sebenarnya tidak demikian (_false positives_)
 
             4. Mengontrol _False Discovery Rate_ (FDR):
 
